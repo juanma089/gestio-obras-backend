@@ -1,54 +1,65 @@
-# API REST for Construction Management
+### 1. Crear el archivo de configuración
 
-## 🛠 Technologies Used
+Necesitas crear o editar el archivo `src/main/resources/application.properties` con la configuración de MySQL:
 
-- **Spring Boot** (Spring Data JPA, Spring Web)
-- **MySQL** as the database
-- **JPA / Hibernate** for data persistence
-- **Lombok** to simplify code
-- **Maven** for dependency management
-- **Railway** for cloud deployment
+### 2. Configuración específica de la base de datos
 
----
+Las propiedades principales que debes configurar son:
 
-## 📌 Prerequisites
+- **`spring.datasource.url`**: URL de conexión a MySQL (formato: `jdbc:mysql://localhost:3306/nombre_base_datos`)
+- **`spring.datasource.username`**: Usuario de MySQL
+- **`spring.datasource.password`**: Contraseña del usuario
+- **`spring.jpa.hibernate.ddl-auto=update`**: Permite que Hibernate actualice automáticamente el esquema de la base de datos
 
-- **Java 17+**
-- **Maven**
-- **MySQL** (Optional for local execution)
+### 3. Preparar la base de datos
 
----
-
-1. **Clone the repository**
-```sh
-   git clone https://github.com/juanma089/gestio-obras-backend.git
+1. **Instalar MySQL** (si no lo tienes)
+2. **Crear la base de datos**:
+```sql
+CREATE DATABASE my_database;
 ```
-```sh
-   cd gestio-obras-backend
+3. **Crear usuario** (opcional):
+```sql
+CREATE USER 'tu_usuario'@'localhost' IDENTIFIED BY 'tu_contraseña';
+GRANT ALL PRIVILEGES ON my_database.* TO 'tu_usuario'@'localhost';
 ```
 
-2. **Configure `application.properties`**
+### 5. Verificar la configuración
 
-Create a file in `src/main/resources/application.properties` and set up the database:
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/name-database?allowPublicKeyRetrieval=true&useSSL=false
-spring.datasource.username=root
-spring.datasource.password=****
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+Una vez configurado, ejecuta:
+```bash
+./mvnw spring-boot:run
 ```
 
-3. **Build and run**
-```sh
-   mvn clean install
-```
-```sh
-   mvn spring-boot:run
-```
+Si la configuración es correcta, Hibernate creará automáticamente las tablas necesarias gracias a `ddl-auto=update`.
 
-4. **Access the API**
-   - Open your browser and navigate to `http://localhost:8080/swagger-ui/index.html`
-   - Use Postman or any other API client to test the endpoints.
+**Notes**
+
+El proyecto utiliza Spring Data JPA con Hibernate para la persistencia. La configuración CORS está establecida para desarrollo local.
+
+### Configuración del Stack Tecnológico
+
+La aplicación utiliza Spring Boot 3.4.4 con las siguientes dependencias principales:
+
+- **Spring Boot Starter Web** para REST API
+- **Spring Boot Starter Data JPA** para persistencia
+- **MySQL Connector/J** para conectividad con MySQL
+- **Spring Boot Starter Security** para autenticación JWT
+- **SpringDoc OpenAPI** para documentación Swagger
+- **Spring Boot Starter WebSocket** para comunicación en tiempo real
+
+### Configuración de Seguridad
+
+El sistema implementa autenticación JWT con filtros de seguridad personalizados:
+
+Los endpoints públicos incluyen Swagger UI y WebSocket, mientras que el resto requiere autenticación.
+
+### Estructura de Base de Datos
+
+El sistema utiliza JPA con Hibernate para generar automáticamente las tablas. La entidad `Inventory` es un ejemplo de la estructura:
+
+Las tablas se crean automáticamente con `spring.jpa.hibernate.ddl-auto=update`, incluyendo restricciones de unicidad y relaciones entre entidades.
+
+## Notes
+
+La aplicación está configurada para despliegue local, y incluye configuración CORS para desarrollo local en el puerto 5173. El sistema implementa un modelo de roles (ADMINISTRADOR, SUPERVISOR, OPERADOR) con control de acceso basado en anotaciones `@PreAuthorize`.
