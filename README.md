@@ -31,9 +31,9 @@
 
 Create a file in `src/main/resources/application.properties` and set up the database:
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/gestion_obras?allowPublicKeyRetrieval=true&useSSL=false
+spring.datasource.url=jdbc:mysql://localhost:3306/name-database?allowPublicKeyRetrieval=true&useSSL=false
 spring.datasource.username=root
-spring.datasource.password=admin
+spring.datasource.password=****
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
