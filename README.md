@@ -92,4 +92,3 @@ Las tablas se crean automáticamente con `spring.jpa.hibernate.ddl-auto=update`,
 ## Notes
 
 La aplicación está configurada para despliegue local, y incluye configuración CORS para desarrollo local en el puerto 5173. El sistema implementa un modelo de roles (ADMINISTRADOR, SUPERVISOR, OPERADOR) con control de acceso basado en anotaciones `@PreAuthorize`.
-089/gestio-obras-backend)](/wiki/juanma089/gestio-obras-backend#1)
