@@ -21,10 +21,10 @@
 
 1. **Clone the repository**
 ```sh
-   git clone https://github.com/juanalvarez6/gestion_obras.git
+   git clone https://github.com/juanma089/gestio-obras-backend.git
 ```
 ```sh
-   cd gestion_obras
+   cd gestio-obras-backend
 ```
 
 2. **Configure `application.properties`**
