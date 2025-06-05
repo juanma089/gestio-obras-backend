@@ -1,51 +1,57 @@
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/GestionObrasApplication.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/config/SwaggerConfig.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/config/WebConfig.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/AssignUserZoneController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/AttendanceController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/InventoryController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/MaterialController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/MaterialRequestController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/ProjectController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/TaskController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/controllers/WorkZoneController.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/assignuserzone/AssignUserZoneDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/attendance/AttendanceDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/inventory/InventoryDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/material/MaterialDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/materialrequest/MaterialRequestDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/project/ProjectDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/task/TaskDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/dtos/workzone/WorkZoneDto.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/AssignUserZone.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/Attendance.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/Inventory.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/Material.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/MaterialRequest.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/Project.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/Task.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/entities/WorkZone.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/enums/MaterialQuality.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/enums/PriorityTask.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/enums/StatusMaterialRequest.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/enums/StatusProject.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/enums/StatusTask.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/models/enums/StatusWorkZone.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/AssignUserZoneRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/AttendanceRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/InventoryRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/MaterialRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/MaterialRequestRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/ProjectRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/TaskRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/repositories/WorkZonesRepository.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/GenericService.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/GenericServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/AssignUserZoneServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/AttendanceServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/InventoryServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/MaterialRequestServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/MaterialServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/ProjectServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/TaskServiceManager.java
-/media/juan-manuel-alvarez/m.2/Documentos/Proyecto sistema de gestión de obras/gestion_obras/src/main/java/com/gestion_obras/services/sevicesmanager/WorkZoneServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/GestionObrasApplication.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/config/SwaggerConfig.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/config/WebSocketConfig.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/config/security/JwtAuthFilter.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/config/security/SecurityConfig.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/AssignUserZoneController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/AttendanceController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/InventoryController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/MaterialController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/MaterialRequestController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/ProjectController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/TaskController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/controllers/WorkZoneController.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/assignuserzone/AssignUserZoneDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/assignuserzone/AssignUsersToZoneDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/attendance/AttendanceDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/inventory/InventoryDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/material/MaterialDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/materialrequest/MaterialRequestDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/project/ProjectDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/task/TaskDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/user/UserInfoDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/dtos/workzone/WorkZoneDto.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/AssignUserZone.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/Attendance.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/Inventory.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/Material.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/MaterialRequest.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/Project.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/Task.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/entities/WorkZone.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/MaterialQuality.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/PriorityTask.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/RoleType.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/StatusMaterialRequest.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/StatusProject.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/StatusTask.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/models/enums/StatusWorkZone.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/AssignUserZoneRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/AttendanceRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/InventoryRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/MaterialRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/MaterialRequestRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/ProjectRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/TaskRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/repositories/WorkZonesRepository.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/GenericService.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/GenericServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/AssignUserZoneServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/AttendanceServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/InventoryServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/MaterialRequestServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/MaterialServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/ProjectServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/TaskServiceManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/UserServiceClientManager.java
+/home/juan-manuel-alvarez/Documentos/repositorios-proyecto/gestio-obras-backend/src/main/java/com/gestion_obras/services/sevicesmanager/WorkZoneServiceManager.java
